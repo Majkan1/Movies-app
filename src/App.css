@@ -1,13 +1,76 @@
 .Black,
 .Photo{
-  height: 500px;
-  width:500px;
+  height: 700px;
+  width: 770px;
 }
 
 .Black{
   background-color: black;
+  position: relative;
+  color:white;
 }
 
 .Both{
   display: flex;
+}
+
+.Photo{
+  position: relative;
+  overflow: hidden;
+}
+
+.Photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Photo::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.25));
+}
+
+.Logo{
+  position:absolute;
+  left:50px;
+  top:20px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Title{
+  position: absolute;
+  left: 70px;
+  top:150px;
+  font-size: 45px;
+}
+
+.underline{
+  width: 160px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  left:70px;
+  top:380px;
+}
+
+.under-title{
+  position: absolute;
+  left: 70px;
+  top:370px;
+  margin-top: 25px;
+}
+
+.Go-to-menu{
+  position: absolute;
+  left:70px;
+  top:440px;
+  background-color: transparent;
+  border:1px solid white;
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
 }
